@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["ES7"],
+    "removeComments": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "sourceMap": true,
+    "target": "es2017",
+    "outDir": "dist",
+    "sourceRoot": "src",
+    "esModuleInterop": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": [
+    "./src/__tests__/*",
+    "./src/__fixtures__/*",
+  ]
+}
