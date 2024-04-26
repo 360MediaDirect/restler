@@ -1,11 +1,11 @@
 {
   "name": "@360mediadirect/restler",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "AWS Lambda handler for Express-based REST controllers",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Tom Shawver <tom@360mediadirect.com>",
   "license": "UNLICENSED",
-  "private": false,
   "scripts": {
     "prepublish": "npm run build",
     "build": "tsc",
