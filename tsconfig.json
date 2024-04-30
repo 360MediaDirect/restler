@@ -6,7 +6,7 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "sourceMap": true,
-    "target": "ES6",
+    "target": "ES5",
     "outDir": "dist",
     "sourceRoot": "src",
     "esModuleInterop": true,
