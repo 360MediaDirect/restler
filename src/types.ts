@@ -10,7 +10,7 @@ export type ControllerRoute = string | RegExp
 
 export type ControllerFunction = (
   req: RestRequest,
-  res: Response
+  res: Response,
 ) => void | Promise<void>
 
 export interface EmbassyToken {
@@ -52,19 +52,19 @@ export interface RestResponse extends Response {
 export type Middleware = (
   req: RestRequest,
   res: RestResponse,
-  next: NextFunction
+  next: NextFunction,
 ) => any
 
 export type ErrorHandlerMiddleware = (
   error: HttpError,
   req: RestRequest,
   res: RestResponse,
-  next: NextFunction
+  next: NextFunction,
 ) => any
 
 export type AppOptions = {
   controllers: ControllerMap
-  embassy: Embassy
+  embassy?: Embassy
   basicAuth?: string
   log?: Logger
 } & ({ specPath: string } | { apiSpec: any })
